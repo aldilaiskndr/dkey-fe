@@ -1,3 +1,7 @@
+@media (max-height:700px){
+  footer { position: static; }
+  header { padding-top:10px; }
+}
 .App {
   text-align: center;
 }
@@ -9,7 +13,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -20,8 +24,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /*font-size: calc(10px + 2vmin);*/
   color: white;
+  /*text-align: center;*/
 }
 
 .App-link {
@@ -35,4 +40,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-container{
+  /*max-height: 80vh;*/
+  margin: 15vh;
+  padding: 15px;
+  color: #282c34;
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+  min-width: 50vh;
+  text-align: center;
+  -webkit-box-shadow: 0 0 31px -7px rgba(0,0,0,1);
+  -moz-box-shadow: 0 0 31px -7px rgba(0,0,0,1);
+  box-shadow: 0 0 31px -7px rgba(0,0,0,1);
+}
+.login-footer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  font-size: 3vh;
+}
+.login-footer .forgot{
+  text-decoration: underline;
+}
+.login-footer .link{
+  color: #282c34;
+}
+
+.detail-text{
+  padding: 0;
+  margin: -15px 0 15px 2px;
+  display: flex;
+  align-items: flex-end;
 }
